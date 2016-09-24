@@ -1,3 +1,3 @@
-# proverjaem konsol`nyi client
+# проверякм консольный клиент 
 print ( "Hello world - console client... " )
 
