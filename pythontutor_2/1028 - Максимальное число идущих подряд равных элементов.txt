@@ -1,0 +1,18 @@
+# Условие
+# Дана последовательность натуральных чисел, завершающаяся числом 0. 
+# Определите, какое наибольшее число подряд идущих элементов этой последовательности равны друг другу.
+
+el_prev = -1
+max_len_cur = 0
+max_len_sum = 0
+el_next = int(input())
+while el_next != 0:
+    if el_prev == el_next:
+        max_len_cur += 1
+    else:
+        el_prev = el_next
+        max_len_sum = max(max_len_cur, max_len_sum)
+        max_len_cur = 1
+    el_next = int(input())
+max_len_sum = max(max_len_cur, max_len_sum)
+print(max_len_sum)
